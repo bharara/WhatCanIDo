@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app id="WebApp_ID" version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="w3.org/2001/XMLSchema-instance" xsi:schemaLocation="java.sun.com/xml/ns/j2ee java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+    <servlet>
+        <servlet-name>user</servlet-name>
+        <servlet-class>webPage.user</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>filter</servlet-name>
+        <servlet-class>webPage.filter</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SignUp</servlet-name>
+        <servlet-class>webPage.SignUp</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>done</servlet-name>
+        <servlet-class>webPage.done</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>addReview</servlet-name>
+        <servlet-class>webPage.addReview</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>user</servlet-name>
+        <url-pattern>/user</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>filter</servlet-name>
+        <url-pattern>/filter</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SignUp</servlet-name>
+        <url-pattern>/SignUp</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>done</servlet-name>
+        <url-pattern>/done</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>addReview</servlet-name>
+        <url-pattern>/addReview</url-pattern>
+    </servlet-mapping>
+</web-app>

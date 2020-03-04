@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<!--
+READ ME
+
+Requirement for running the project
+
+1 - NetBeans with Java Web and tomcat
+2 - XML-beans 2.3.0
+3 - Commons-collections 4.4.1
+4 - POI 3.7
+5 - POI ooxml
+6 - Microsoft Excel 2007 or later
+
+Beware:
+This project have 2 file paths hardcoded. They may need to be updated after moving the files
+1 - GeneralFunctions FILE_NAME
+2 - GeneralFunctions getCss
+
+How to Start?
+
+Go to index.html and run the file. The first time, server will take some time to load.
+After that just go to http://localhost:8084/WhatCanIDo/
+
+Project by @bharara
+
+-->
+<html>
+    <head>
+        <link rel='stylesheet' type='text/css' href='/WhatCanIDo/styles.css'>
+        <title>Home - What Can I Do</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <style>
+            body {
+                background-image: '\Pics\bg.jpg';
+                background-repeat: no-repeat;
+                background-size: cover;
+                background: #e0e1e6;
+            }
+            
+            h1 {
+                text-align: center;
+                background-color: #4CAF50; /* Green */
+                color: white;
+                padding: 20px;
+                width: 30%;
+                margin: auto;
+            }
+            h3 {
+                text-align: center;
+            }
+            
+            input[type=text] {
+                width: 100%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+            }
+
+            input[type=submit] {
+                width: 100%;
+                background-color: #4CAF50;
+                color: white;
+                padding: 14px 20px;
+                margin: 8px 0;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+
+            input[type=submit]:hover {
+                background-color: #45a049;
+            }
+
+            .input {
+                border-radius: 5px;
+                background-color: #f2f2f2;
+                padding: 20px;
+                width: 15%;
+                margin: auto;
+            } 
+            
+            /* Home Button */
+            .signUpButton {
+                background-color: #4CAF50; /* Green */
+                border: none;
+                color: white;
+                padding: 16px 32px;
+                text-align: center;
+                text-decoration: none;
+                font-size: 16px;
+                margin: 4px 2px;
+                -webkit-transition-duration: 0.4s; /* Safari */
+                transition-duration: 0.4s;
+                cursor: pointer;
+                border-radius: 20%;
+                text-decoration: none;
+            }
+
+            .signUpButton:hover {
+                background-color: white; 
+                color: black; 
+                border: 2px solid #4CAF50;
+            }
+            
+            a {
+                text-decoration: none;
+            }
+
+</style>
+    </head>
+    <body>
+        <h1><i>WhatCanIDo?</i></h1>
+        <h3>The Best Content Recommendation system for You</h3>
+        
+        <div class="input">
+        <form action="filter" method='post'>
+            <label>User Name: </label><input type='text' name='name' required> <br>
+            <input type='submit' value='Login'>
+        </form>
+        </div>
+        <br>
+        <div class='signUpButton' style='margin: auto; width:7%;'>
+            <a href="/WhatCanIDo/SignUp">Sign Up</a>
+        </div>
+    </body>
+</html>
